@@ -1,0 +1,22 @@
+{
+  "name": "rent",
+  "version": "1.0.0",
+  "description": "Searching for a place to rent with the help of computers",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "rent",
+    "place"
+  ],
+  "author": "Luis Del Águila <luisdelaguila@outlook.com>",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "simple-get": "^3.0.3"
+  },
+  "devDependencies": {
+    "standard": "^12.0.1"
+  }
+}
