@@ -12,9 +12,13 @@ const props = [
 const filteredEntries = entries.filter((entry) => {
   return props.some(prop => regex.test(entry[prop]))
 })
+  .filter((entry) => {
+    return new Date(entry.date.timestamp) > new Date('2018-10-20T00:00:00')
+  })
 
 const length = filteredEntries.length
 const smallEntries = filteredEntries.map(entry => ({
+  id: entry.id,
   title: entry.title,
   description: entry.description,
   slug: entry.slug.replace('//', 'https://')
